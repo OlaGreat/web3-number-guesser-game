@@ -11,6 +11,7 @@ const GameStats: React.FC<GameStatsProps> = ({
   guessesUsed, 
   maxGuesses, 
   difficultyLabel 
+  
 }) => {
   const remainingGuesses = maxGuesses - guessesUsed;
   const progressPercentage = (guessesUsed / maxGuesses) * 100;
