@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useCallback } from 'react';
 import GameBoard from './gameBoard';
 import DifficultySelector from './difficultySelector';
@@ -68,14 +69,14 @@ const NumberGuessingGame = () => {
   return (
     <div className="max-w-2xl mx-auto">
       <Card className="bg-white/10 backdrop-blur-md border-white/20 shadow-2xl">
-        <CardHeader className="text-center">
-          <CardTitle className="text-4xl font-bold text-white mb-2">
+        <header className="text-center">
+          <nav className="text-4xl font-bold text-white mb-2">
             🎯 Number Guessing Game
-          </CardTitle>
+          </nav>
           <p className="text-white/80 text-lg">
             Can you guess the secret number between 1 and 100?
           </p>
-        </CardHeader>
+        </header>
         <CardContent>
           {gameState === 'selecting' ? (
             <DifficultySelector 

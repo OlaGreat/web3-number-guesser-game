@@ -2,7 +2,7 @@ import React from 'react';
 import GuessInput from './guessInput';
 import GameStats from './gameStats';
 import { Card, CardContent } from './card';
-import { GameState, GameConfig } from './NumberGuessingGame';
+import { GameState, GameConfig } from './numberGuessingGame';
 
 interface GameBoardProps {
   gameState: GameState;
@@ -48,6 +48,7 @@ const GameBoard: React.FC<GameBoardProps> = ({
     return 'text-green-300';
   };
 
+  
   if (gameState === 'won') {
     return (
       <div className="text-center space-y-6 animate-scale-in">

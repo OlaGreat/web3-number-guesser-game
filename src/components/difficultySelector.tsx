@@ -1,10 +1,11 @@
 import React from 'react';
 import { Card, CardContent } from './card';
-import { Difficulty } from './NumberGuessingGame';
+import { Difficulty } from './numberGuessingGame';
 
 interface DifficultyConfig {
   maxGuesses: number;
   label: string;
+  
 }
 
 interface DifficultySelectorProps {
